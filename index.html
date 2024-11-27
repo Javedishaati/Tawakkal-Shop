@@ -4,75 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tawakkal Shop | Fresh Chicken</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="header">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
-            <h1>Tawakkal Shop</h1>
-            <p>Fresh & Quality Chicken at Your Fingertips!</p>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#products">Products</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#contact">Contact</a></li>
+            <a class="navbar-brand" href="#">Tawakkal Shop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
-            </nav>
+            </div>
         </div>
-    </header>
+    </nav>
 
-    <section id="home" class="home">
+    <!-- Hero Section -->
+    <section id="home" class="hero bg-primary text-white text-center py-5">
         <div class="container">
-            <h2>Welcome to Tawakkal Shop</h2>
+            <h1>Welcome to Tawakkal Shop</h1>
             <p>Your trusted source for fresh, high-quality chicken.</p>
+            <a href="#products" class="btn btn-light btn-lg">Shop Now</a>
         </div>
     </section>
 
-    <section id="products" class="products">
-        <div class="container">
-            <h2>Our Products</h2>
-            <div class="product-list">
-                <div class="product-item">
-                    <img src="images/chicken1.jpg" alt="Whole Chicken">
-                    <h3>Whole Chicken</h3>
-                    <p>Price: $10</p>
+    <!-- Products Section -->
+    <section id="products" class="products py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Our Products</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/chicken1.jpg" class="card-img-top" alt="Whole Chicken">
+                        <div class="card-body">
+                            <h5 class="card-title">Whole Chicken</h5>
+                            <p class="card-text">Price: $10</p>
+                            <a href="https://wa.me/1234567890" class="btn btn-primary">Order Now</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="product-item">
-                    <img src="images/chicken2.jpg" alt="Chicken Breast">
-                    <h3>Chicken Breast</h3>
-                    <p>Price: $8</p>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/chicken2.jpg" class="card-img-top" alt="Chicken Breast">
+                        <div class="card-body">
+                            <h5 class="card-title">Chicken Breast</h5>
+                            <p class="card-text">Price: $8</p>
+                            <a href="https://wa.me/1234567890" class="btn btn-primary">Order Now</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="product-item">
-                    <img src="images/chicken3.jpg" alt="Chicken Wings">
-                    <h3>Chicken Wings</h3>
-                    <p>Price: $6</p>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/chicken3.jpg" class="card-img-top" alt="Chicken Wings">
+                        <div class="card-body">
+                            <h5 class="card-title">Chicken Wings</h5>
+                            <p class="card-text">Price: $6</p>
+                            <a href="https://wa.me/1234567890" class="btn btn-primary">Order Now</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="about" class="about">
-        <div class="container">
+    <!-- About Section -->
+    <section id="about" class="about py-5 bg-light">
+        <div class="container text-center">
             <h2>About Us</h2>
-            <p>At Tawakkal Shop, we are dedicated to providing fresh and high-quality chicken to our customers. With a focus on hygiene and excellent service, we ensure that every product meets the highest standards.</p>
+            <p>At Tawakkal Shop, we provide fresh, high-quality chicken delivered straight to your door. Our commitment to quality ensures every product meets the highest standards.</p>
         </div>
     </section>
 
-    <section id="contact" class="contact">
-        <div class="container">
+    <!-- Contact Section -->
+    <section id="contact" class="contact py-5">
+        <div class="container text-center">
             <h2>Contact Us</h2>
             <p>Phone: +123 456 7890</p>
             <p>Email: contact@tawakkalshop.com</p>
             <p>Address: 123 Fresh Street, Chicken Town</p>
-            <a href="https://wa.me/1234567890" class="order-btn">Order on WhatsApp</a>
+            <a href="https://wa.me/1234567890" class="btn btn-primary">Order via WhatsApp</a>
         </div>
     </section>
 
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Tawakkal Shop. All rights reserved.</p>
-        </div>
+    <!-- Footer Section -->
+    <footer class="footer bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Tawakkal Shop. All rights reserved.</p>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 </body>
 </html>

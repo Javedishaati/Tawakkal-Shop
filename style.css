@@ -1,91 +1,48 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-.header {
-    background-color: #f8b400;
+.navbar {
+    background-color: #007bff;
+}
+
+.navbar a {
     color: #fff;
-    padding: 20px 0;
-    text-align: center;
 }
 
-.header h1 {
+.hero {
+    background-color: #28a745;
+    color: #fff;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+.products .card {
+    border: none;
+}
+
+.products .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.about, .contact {
+    padding: 60px 0;
+}
+
+footer {
+    background-color: #343a40;
+}
+
+footer p {
     margin: 0;
-    font-size: 2.5rem;
-}
-
-.header nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0 0 0;
-    display: flex;
-    justify-content: center;
-}
-
-.header nav ul li {
-    margin: 0 15px;
-}
-
-.header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1rem;
-}
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.home, .products, .about, .contact {
-    padding: 50px 0;
-    text-align: center;
-}
-
-.products .product-list {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.products .product-item {
-    background-color: #f4f4f4;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    text-align: center;
-    width: 30%;
-}
-
-.products .product-item img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.contact .order-btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #f8b400;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.contact .order-btn:hover {
-    background-color: #e09e00;
-}
-
-.footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    font-size: 0.9rem;
 }
